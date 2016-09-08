@@ -16,7 +16,7 @@ This project is in no way affiliated with the New Bedford Whaling Museum.
 - `crewlist.csv` database CSV file from the Whaling Museum website
 - `format_data.R` script to put the data into an R `data.frame`
 - `heights.R` helper script to convert between the weirdly formatted seaman heights and metres (thanks to [James Curran for this code](https://gist.github.com/jmcurran/36734b7d62d4995e0b16ee4b2b7b4075))
-
+- `whalers.RData` RData file with the `data.frame` containing the data, suitably formatted for R.
 
 # License
 
