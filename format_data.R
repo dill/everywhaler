@@ -44,9 +44,12 @@ whalers$Rig <- as.factor(whalers$Rig)
 
 
 ## parse the insane heights
-source("the_empire_strikes_back.R")
-hh <- the_empire_strikes_back(whalers$Height)
+# thanks to James Curran for this code
+source("heights.R")
+# returns a vector hh that has the heights in it
+# second column is height in mm, convert to m
+whalers$Height <- hh[,2]/1000
+rm(hh)
 
-
-
+save(whalers, file="whalers.RData")
 
